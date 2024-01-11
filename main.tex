@@ -1,0 +1,225 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\input{particulars}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[urlcolor=darkgray, colorlinks=true, linkcolor=blue, pdfborder={0 0 1 [0]}]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{adjustbox}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\describe}[2]{
+    \csname #1@#2\endcsname
+}
+
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\titlesection{
+\begin{center}
+    {\Huge \scshape \firstname \ \lastname} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ \jasphone ~ \href{mailto:\email}{\raisebox{-0.2\height}\faEnvelope\  \email} \\
+    \href{\linkedin}{\raisebox{-0.2\height}\faLinkedin\ LinkedIn}  ~
+    \href{\github}{\raisebox{-0.2\height}\faGithub\ GitHub}
+    \vspace{-8pt}
+\end{center}
+}
+
+
+\begin{document}
+\titlesection
+\profileSummary
+
+\describe{College}{Start}
+
+%-----------EDUCATION-----------
+\section{Educación}
+  \resumeSubHeadingListStart
+      \resumeSubheading{\csname post@School\endcsname}
+      {\csname post@Start\endcsname \ -- \csname post@End\endcsname}
+      {\csname post@Course\endcsname, \csname post@Stream\endcsname}{}
+            \resumeSubheading{\csname pre@School\endcsname}
+      {\csname pre@Start\endcsname \ -- \csname pre@End\endcsname}
+      {\csname pre@Course\endcsname, \csname pre@Stream\endcsname}{}
+  \resumeSubHeadingListEnd
+
+
+\newcommand{\renderExp}[1]{
+\resumeSubheading
+      {\csname #1@Company\endcsname}{\csname #1@Start\endcsname -- \csname #1@End\endcsname}
+      {\csname #1@Designation\endcsname}{\csname #1@Location\endcsname}
+      \csname #1@Highlights\endcsname
+}
+
+\section{Experiencia Laboral}
+    \resumeSubHeadingListStart
+        \renderExp{R52}
+        \renderExp{R51}
+        \renderExp{Excelcredit} 
+        \renderExp{BDO}
+        \renderExp{UV}  
+  \resumeSubHeadingListEnd
+% \vspace{-16pt}
+\newpage
+\section{Experiencia Docente}
+    \resumeSubHeadingListStart
+        \renderExp{ulibre}
+        \renderExp{uvalle}
+        \renderExp{comfe}
+  \resumeSubHeadingListEnd
+% \vspace{-16pt}
+
+\newcommand{\singleTechLogo}[3]{
+ \begin{minipage}{0.1\textwidth}
+   \centering
+   \adjustbox{valign=c}{\includegraphics[scale=#3]{#2}}
+   \vspace{-5pt}
+   \textbf{#1}
+ \end{minipage}
+ \hfill
+}
+
+\section{Tecnologías}
+\noindent
+\singleTechLogo{}{logos/python.png}{0.02}
+\singleTechLogo{}{logos/git.png}{0.1}
+\singleTechLogo{}{logos/AirflowLogo.png}{0.15}
+\singleTechLogo{}{logos/aws.png}{0.2}
+\singleTechLogo{}{logos/dvc.png}{0.2}
+\singleTechLogo{}{logos/linux.jpg}{0.1}
+\newline
+\singleTechLogo{}{logos/docker.png}{0.02}
+\singleTechLogo{}{logos/postgres.png}{0.05}
+\singleTechLogo{}{logos/r.png}{0.03}
+\singleTechLogo{}{logos/jenkins.jpg}{0.06}
+\singleTechLogo{}{logos/fastapi.png}{0.06}
+
+\newcommand{\renderHck}[1]{
+      \resumeProjectHeading
+      {\textbf{\csname #1@Title\endcsname} $|$ \csname #1@Position\endcsname}
+      {\csname #1@Date\endcsname}
+      \csname #1@Highlights\endcsname
+}
+
+
+
+
+
+\section{Proyectos destacados en Github}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+    \renderHck{scrapper}
+    \vspace{-13pt}
+    \renderHck{itseries}
+    \vspace{-13pt}
+    \renderHck{cluster}
+\resumeSubHeadingListEnd
+
+\end{document}

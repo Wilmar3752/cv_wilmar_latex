@@ -1,0 +1,213 @@
+\input{utilities}
+\usepackage{blindtext}  
+\usepackage{lipsum}
+
+\def\lrand{\lipsum[-]}
+\def\firstname{Wilmar}
+\def\lastname{Sepulveda Herrera}
+\def\email{wilmar.sepulveda2@gmail.com}
+\def\linkedin{https://www.linkedin.com/in/wilmar3752/}
+\def\github{https://github.com/Wilmar3752}
+\def\jasphone{+57 (311) 371-6605}
+
+% \def\jbegin{\begin{itemize}}
+% \def\jitem{\item }
+% \def\jend{\end{itemize}}
+\def\jbegin{\resumeItemListStart}
+\def\jitem{\resumeItem}
+\def\jend{\resumeItemListEnd}
+
+\def\profileSummary{
+\section{Sobre mi}
+Estadístico MSc, con +5 años de experiencia desarrollando soluciones analíticas end to end basadas en modelos estadísticos, algoritmos de machine learning e inteligencia artificial para el sector financiero y asegurador, apasionado por el MLOPS, la ingeniería de datos, la docencia y la investigación. Durante mi carrera he logrado que los negocios de créditos y seguros para los que he trabajado sean mas rentables y tengan una mejor cultura de data.
+}
+
+
+\def\achievements{
+    \jbegin
+        \jitem{\lrand[1]}
+        \jitem {\lrand[2]}
+        \jitem {\lrand[1]}
+        \jitem {\lrand[2]}
+    \jend
+}
+
+% # Add education item here
+\EducationTemplate{post}
+{Agosto 2020}{Diciembre 2023}{Universidad del Valle}
+{Magister en estadística}
+{4.7/5}
+\EducationTemplate{pre}
+{Enero 2011}{Diciembre 2017}{Universidad del Valle}
+{Estadístico}
+{4/5}
+
+
+\ExpTemplate{R52}
+{Marzo 2022}
+{Presente}
+{Líder de Analítica Avanzada}
+{\href{https://www.grupor5.com/}{R5}}
+{Fintech}
+{
+\jbegin
+    \jitem{Liderar un equipo 4 científicos de datos, trabajando en proyectos de Machine Learning, Analitica descriptiva y Mlops.}
+    \jitem{Mediante Machine Learning y analitica descriptiva, logré mejorar el producto SOAT escogiendo inteligentemente los mejores riesgos y llegar a un LossRatio de 70\% vs un 120\% del mercado.}
+    \jitem{Usando Aprendizaje no supervisado, logramos entender mejor a nuestros clientes y así mejorar la eficiencia en las cobranzas.}
+    \jitem{Con el uso de metodologías de analitica avanzada, logramos escoger mejor a nuestros clientes de credito, reduciendo asi metricas como 30-ever y 60-ever.}
+\jend
+}
+\ExpTemplate{R51}
+{Nov 2023}
+{Dic 2023}
+{Senior Data Scientist}
+{\href{}{Alcaldíá de Santiago de Cali}}
+{Contratista}
+{
+\jbegin
+    \jitem{Implementar modelos de Machine learning para predecir mortalidad fetal y no fetal.}
+    \jitem{Construcción de un tablero de control para cacterizar la mortalidad infantil.}
+\jend
+}
+
+\ExpTemplate{Excelcredit}
+{Mayo 2021}
+{Marzo 2022}
+{Senior Data Scientist}
+{Excelcredit}
+{Fintech}
+{
+\jbegin
+    \jitem{Solucionar problemas de negocio mediante analítica avanzada, tales como: Calculo de provisión, estimación de prepago, duración de clientes, Segmentación de clientes, riesgo LAFT.}
+\jend
+}
+
+
+\ExpTemplate{BDO}
+{Sept 2020}
+{Mayo 2021}
+{Data Scientist}
+{Banco de Occidente}
+{Banca tradicional}
+{
+\jbegin
+    \jitem{Encargado de construir modelos de machine learning para optimizar procesos y generar valor: Cobranza,  normalización de cartera,  daño en el flujo de caja de los clientes a raíz de la coyuntura del Covid 19.}
+\jend
+}
+
+\ExpTemplate{UV}
+{Abril 2019}
+{Dic 2019}
+{Data Analyst}
+{Universidad del valle}
+{Oficina de planeación}
+{
+\jbegin
+    \jitem{Construcción de tableros de control para el análisis de las pruebas Saber-Pro, utilizando ShinyApps.}
+    \jitem{Construcción de anuario estadístico 2018.}
+    \jitem{Carga de diferentes indicadores de la universidad en el SNIES.}
+\jend
+}
+
+\ExpTemplate{ulibre}
+{Nov 2023}
+{dic 2023}
+{Docente}
+{Universidad Libre - Cali}
+{Doplomado Machine Learning}
+{
+\jbegin
+    \jitem{Impartir el curso Estadística para Ciencia de Datos.}
+\jend
+}
+\ExpTemplate{uvalle}
+{Nov 2021}
+{Feb 2022}
+{Asistente de docencia}
+{Universidad del valle}
+{Facultad de Ingeniería}
+{
+\jbegin
+    \jitem{Impartir el curso de Probabilidad y Estadística a estudiantes de Ingeniería de Sistemas.}
+    \jitem{Impartir el curso de Fundamentos de Estadística a estudiantes de Ingenieríá Agrícola.}
+\jend
+}
+
+\ExpTemplate{comfe}
+{Febrero 2019}
+{Enero 2021}
+{Docente}
+{Comfenalco - PEC}
+{Tecnico laboral}
+{
+\jbegin
+    \jitem{Orientar a los afiliados a la caja de compensación pertenecientes a los programas técnicos laborales; auxiliar administrativo y auxiliar contable (matemáticas, procesar datos, trabajo de grado.)}
+\jend
+}
+
+
+
+\HckTemplate{HackCIMDGS}
+{2019}
+{\lrand[1]}
+{\lrand[3]}
+{\jbegin
+    \jitem{\lrand[27]}
+    \jitem{ \lrand[28]}
+\jend}
+
+
+\HckTemplate{HackWInfy}
+{2019}
+{\lrand[1]}
+{\lrand[3]}
+{\jbegin
+    \jitem{\lrand[27]}
+    \jitem{ \lrand[28]}
+    \jitem{ \lrand[30]}
+\jend}
+
+\HckTemplate{i3wm}
+{}
+{\lrand[1]}
+{\lrand[2]}
+{\jbegin
+    \item{\lrand[20]{}}
+    \item {\lrand[30]}
+    \item {\lrand[2]}
+\jend}
+
+\HckTemplate{scrapper}
+{}
+{\href{https://github.com/Wilmar3752/meli_scrapper}{Web Scraping MELI}}
+{Realiza Web scraping de la lista de todos los productos publicados en Mercado Libre.}
+{\jbegin
+\jend}
+
+\HckTemplate{itseries}
+{}
+{\href{https://github.com/Wilmar3752/itseries}{irseries}}
+{Un paquete de R para analizar procesos estocásticos irregularmente espaciados.}
+{\jbegin
+\jend}
+
+\HckTemplate{cluster}
+{}
+{\href{https://github.com/Wilmar3752/cluster-app}{Cluster-APP}}
+{En Este proyecto realizo una APP con Gradio y HuggingFace para clasificar clientes de tarjeta de crédito.}
+{\jbegin
+\jend}
+% \DefineArrayVar{Education}{@}
+% {,}{School, Course, Stream, Start, End}
+% {,}{C,D}
+
+
+% % # Add experience item here
+
+
+
+
+% \renewcommand{addEducation}{}
+
+
+% # Add projects here
