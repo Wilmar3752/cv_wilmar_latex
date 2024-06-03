@@ -1,0 +1,228 @@
+\input{../utilities}
+\usepackage{blindtext}  
+\usepackage{lipsum}
+
+\def\lrand{\lipsum[-]}
+\def\firstname{Wilmar}
+\def\lastname{Sepulveda Herrera}
+\def\email{wilmar.sepulveda2@gmail.com}
+\def\linkedin{https://www.linkedin.com/in/wilmar3752/}
+\def\github{https://github.com/Wilmar3752}
+\def\jasphone{+57 (311) 371-6605}
+
+% \def\jbegin{\begin{itemize}}
+% \def\jitem{\item }
+% \def\jend{\end{itemize}}
+\def\jbegin{\resumeItemListStart}
+\def\jitem{\resumeItem}
+\def\jend{\resumeItemListEnd}
+
+\def\profileSummary{
+\section{About Me}
+Statistician MSc, with over 5 years of experience developing end-to-end analytical solutions based on statistical models, machine learning algorithms, and artificial intelligence for the financial and insurance sectors. Passionate about MLOps, data engineering, teaching, and research. Throughout my career, I have made credit and insurance businesses more profitable and fostered a better data culture.
+}
+
+\def\achievements{
+    \jbegin
+        \jitem{\lrand[1]}
+        \jitem {\lrand[2]}
+        \jitem {\lrand[1]}
+        \jitem {\lrand[2]}
+    \jend
+}
+
+% # Add education item here
+\EducationTemplate{post}
+{August 2020}{December 2023}{Universidad del Valle}
+{Master in Statistics}
+{4.7/5}
+\EducationTemplate{pre}
+{January 2011}{December 2017}{Universidad del Valle}
+{Statistician}
+{4/5}
+
+\ExpTemplate{R52}
+{March 2022}
+{Present}
+{Leader of Advanced Analytics}
+{\href{https://www.grupor5.com/}{R5}}
+{Fintech}
+{
+\jbegin
+    \jitem{Lead a team of 4 data scientists, working on Machine Learning, Descriptive Analytics, and MLOps projects.}
+    \jitem{Through Machine Learning and descriptive analytics, I improved the SOAT product by intelligently selecting the best risks, achieving a Loss Ratio of 70\% vs. 120\% of the market, translating into billions of pesos in profits for the company.}
+    \jitem{Using unsupervised learning, we better understood our customers and thus improved collection efficiency.}
+    \jitem{Using advanced analytics methodologies, we better selected our credit customers, thus reducing metrics like 30-ever and 60-ever.}
+\jend
+}
+\ExpTemplate{R51}
+{Nov 2023}
+{Dec 2023}
+{Senior Data Scientist}
+{\href{}{Alcaldía de Santiago de Cali}}
+{Contractor}
+{
+\jbegin
+    \jitem{Implement Machine Learning models to predict fetal and non-fetal mortality.}
+    \jitem{Build a dashboard to characterize infant mortality.}
+\jend
+}
+
+\ExpTemplate{Excelcredit}
+{May 2021}
+{March 2022}
+{Senior Data Scientist}
+{Excelcredit}
+{Fintech}
+{
+\jbegin
+    \jitem{Solve business problems through advanced analytics, such as: Provision calculation, prepayment estimation, customer duration, customer segmentation, LAFT risk.}
+\jend
+}
+
+\ExpTemplate{BDO}
+{Sept 2020}
+{May 2021}
+{Data Scientist}
+{Banco de Occidente}
+{Traditional Banking}
+{
+\jbegin
+    \jitem{In charge of building machine learning models to optimize processes and generate value: Collection, portfolio normalization, damage to customer cash flow due to the Covid-19 situation.}
+\jend
+}
+
+\ExpTemplate{UV}
+{April 2019}
+{Dec 2019}
+{Data Analyst}
+{Universidad del Valle}
+{Planning Office}
+{
+\jbegin
+    \jitem{Construction of dashboards for the analysis of Saber-Pro tests, using ShinyApps.}
+    \jitem{Construction of the 2018 statistical yearbook.}
+    \jitem{Loading various university indicators into the SNIES.}
+\jend
+}
+
+\ExpTemplate{ulibre}
+{Nov 2023}
+{Dec 2023}
+{Instructor}
+{Universidad Libre - Cali}
+{Machine Learning Diploma}
+{
+\jbegin
+    \jitem{Teach the course Statistics for Data Science.}
+\jend
+}
+\ExpTemplate{uvalle}
+{Nov 2021}
+{Feb 2022}
+{Teaching Assistant}
+{Universidad del Valle}
+{Faculty of Engineering}
+{
+\jbegin
+    \jitem{Teach the course of Probability and Statistics to Systems Engineering students.}
+    \jitem{Teach the course of Fundamentals of Statistics to Agricultural Engineering students.}
+\jend
+}
+
+\ExpTemplate{comfe}
+{Feb 2019}
+{Jan 2021}
+{Instructor}
+{Comfenalco - PEC}
+{Technical Labor}
+{
+\jbegin
+    \jitem{Guide affiliates to the compensation fund belonging to the technical labor programs; administrative assistant and accounting assistant (mathematics, data processing, thesis work.)}
+\jend
+}
+
+\HckTemplate{HackCIMDGS}
+{2019}
+{\lrand[1]}
+{\lrand[3]}
+{\jbegin
+    \jitem{\lrand[27]}
+    \jitem{ \lrand[28]}
+\jend}
+
+\HckTemplate{HackWInfy}
+{2019}
+{\lrand[1]}
+{\lrand[3]}
+{\jbegin
+    \jitem{\lrand[27]}
+    \jitem{ \lrand[28]}
+    \jitem{ \lrand[30]}
+\jend}
+
+\HckTemplate{i3wm}
+{}
+{\lrand[1]}
+{\lrand[2]}
+{\jbegin
+    \item{\lrand[20]{}}
+    \item {\lrand[30]}
+    \item {\lrand[2]}
+\jend}
+
+\HckTemplate{scrapper}
+{}
+{\href{https://github.com/Wilmar3752/meli_scrapper}{Web Scraping MELI}}
+{Performs web scraping of the list of all products published on Mercado Libre. Here I certify \\ my knowledge in Web Scraping, Docker, CI/CD, Python.}
+{\jbegin
+\jend}
+
+\HckTemplate{scrapperETL}
+{}
+{\href{https://github.com/Wilmar3752/ETL_scraper}{CAR ETL}}
+{I carry out an ETL process where I extract vehicle data, process it with Python, and load it to AWS S3,\\ using GitHub Actions.}
+{\jbegin
+\jend}
+
+\HckTemplate{carpredict}
+{}
+{\href{https://github.com/Wilmar3752/car_predict}{CAR PREDICT}}
+{I build a machine learning model using different technologies: DVC, FastAPI, Docker, Python.}
+{\jbegin
+\jend}
+
+\HckTemplate{carpredictapp}
+{}
+{\href{https://github.com/Wilmar3752/car_predict}{CAR PREDICT APP}}
+{Here I create a web application with Streamlit, which has its own database.}
+{\jbegin
+\jend}
+
+\HckTemplate{itseries}
+{}
+{\href{https://github.com/Wilmar3752/itseries}{ITSERIES}}
+{An R package for analyzing irregularly spaced stochastic processes.}
+{\jbegin
+\jend}
+
+\HckTemplate{cluster}
+{}
+{\href{https://github.com/Wilmar3752/cluster-app}{Cluster-APP}}
+{In this project, I create an app with Gradio and HuggingFace to classify credit card customers.}
+{\jbegin
+\jend}
+% \DefineArrayVar{Education}{@}
+% {,}{School, Course, Stream, Start, End}
+% {,}{C,D}
+
+
+% % # Add experience item here
+
+
+
+
+% \renewcommand{addEducation}{}
+
+
+% # Add projects here
