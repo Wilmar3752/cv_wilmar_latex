@@ -1,0 +1,82 @@
+%-------------------------
+% Resume Sections Structure
+% Common structure for all language versions
+%------------------------
+
+% Education Section
+\newcommand{\renderEducation}{
+\section{\sectionEducation}
+  \resumeSubHeadingListStart
+      \resumeSubheading{\csname post@School\endcsname}
+      {\csname post@Start\endcsname \ -- \csname post@End\endcsname}
+      {\csname post@Course\endcsname, \csname post@Stream\endcsname}{}
+            \resumeSubheading{\csname pre@School\endcsname}
+      {\csname pre@Start\endcsname \ -- \csname pre@End\endcsname}
+      {\csname pre@Course\endcsname, \csname pre@Stream\endcsname}{}
+  \resumeSubHeadingListEnd
+}
+
+% Work Experience Section
+\newcommand{\renderWorkExperience}{
+\section{\sectionWorkExperience}
+    \resumeSubHeadingListStart
+        \renderExp{Coderland} 
+        \renderExp{R52}
+        %\renderExp{R51}
+        \renderExp{Excelcredit} 
+        \renderExp{BDO}
+        \renderExp{UV}  
+  \resumeSubHeadingListEnd
+}
+
+% Teaching Experience Section
+\newcommand{\renderTeachingExperience}{
+\newpage
+\section{\sectionTeachingExperience}
+    \resumeSubHeadingListStart
+        \renderExp{ulibre}
+        \renderExp{uvalle}
+        \renderExp{comfe}
+  \resumeSubHeadingListEnd
+}
+
+% Tech Stack Section
+\newcommand{\renderTechStack}{
+\section{\sectionTechStack}
+\noindent
+\techItem{Python}
+\techItem{Git}
+\techItem{Airflow}
+\techItem{AWS}
+\techItem{DVC}
+\techItem{Linux}
+\newline
+\techItem{Docker}
+\techItem{PostgreSQL}
+\techItem{R}
+\techItem{Jenkins}
+\techItem{FastAPI}
+\techItem{Databricks}
+\techItem{Kedro}
+\vspace{5pt}
+}
+
+% Projects Section
+\newcommand{\renderProjects}{
+\section{\sectionProjects}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+    \renderHck{scrapper}
+    \vspace{-5pt}
+    \renderHck{scrapperETL}
+    \vspace{-5pt}
+    \renderHck{carpredict}
+    \vspace{-12pt}
+    \renderHck{carpredictapp}
+    \vspace{-12pt}
+    \renderHck{itseries}
+    \vspace{-12pt}
+    \renderHck{cluster}
+\resumeSubHeadingListEnd
+}
+

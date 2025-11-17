@@ -1,0 +1,101 @@
+%-------------------------
+% Custom Commands
+% Shared LaTeX commands for resume formatting
+%------------------------
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\describe}[2]{
+    \csname #1@#2\endcsname
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Title section command
+\newcommand{\titlesection}{
+\begin{center}
+    {\Huge \scshape \firstname \ \lastname} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ \jasphone ~ \href{mailto:\email}{\raisebox{-0.2\height}\faEnvelope\  \email} \\
+    \href{\linkedin}{\raisebox{-0.2\height}\faLinkedin\ LinkedIn}  ~
+    \href{\github}{\raisebox{-0.2\height}\faGithub\ GitHub}
+    \href{\web}{\raisebox{-0.2\height}\faGlobe\ wilmarsepulveda.com}
+    \vspace{-8pt}
+\end{center}
+}
+
+% Experience rendering command
+\newcommand{\renderExp}[1]{
+\resumeSubheading
+      {\csname #1@Company\endcsname}{\csname #1@Start\endcsname -- \csname #1@End\endcsname}
+      {\csname #1@Designation\endcsname}{\csname #1@Location\endcsname}
+      \csname #1@Highlights\endcsname
+}
+
+% Tech logo command (deprecated - kept for compatibility)
+\newcommand{\singleTechLogo}[3]{
+ \begin{minipage}{0.1\textwidth}
+   \centering
+   \adjustbox{valign=c}{\includegraphics[scale=#3]{#2}}
+   \vspace{-5pt}
+   \textbf{#1}
+ \end{minipage}
+ \hfill
+}
+
+% Tech text command (new - for text-based tech stack)
+\newcommand{\techItem}[1]{
+ \begin{minipage}{0.12\textwidth}
+   \centering
+   \small\textbf{#1}
+ \end{minipage}
+ \hfill
+}
+
+% Project rendering command
+\newcommand{\renderHck}[1]{
+      \resumeProjectHeading
+      {\textbf{\csname #1@Title\endcsname} $|$ \csname #1@Position\endcsname}
+      {\csname #1@Date\endcsname}
+      \csname #1@Highlights\endcsname
+}
+
