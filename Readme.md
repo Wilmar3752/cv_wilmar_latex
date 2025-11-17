@@ -1,4 +1,4 @@
-## CV Wilmar Sepulveda 2024
+## CV Wilmar Sepulveda 2025
 
 Este proyecto contiene el código LaTeX que genera mi Hoja de vida actualizada en formato PDF.
 
