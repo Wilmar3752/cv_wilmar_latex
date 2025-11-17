@@ -21,24 +21,3 @@ cv_wilmar_latex/
 ├── logos/                     # Logos de tecnologías
 └── utilities.tex              # Plantillas para educación, experiencia, proyectos
 ```
-
-### Cómo compilar
-
-Para compilar el CV en inglés:
-```bash
-cd english
-pdflatex main.tex
-```
-
-Para compilar el CV en español:
-```bash
-cd spanish
-pdflatex main.tex
-```
-
-### Ventajas de la estructura modular
-
-- **Sin duplicación**: El código común está centralizado en `common/`
-- **Fácil mantenimiento**: Cambios en formato se hacen una sola vez
-- **Separación de idiomas**: Solo los títulos y contenido cambian por idioma
-- **Escalable**: Fácil agregar nuevos idiomas o secciones
